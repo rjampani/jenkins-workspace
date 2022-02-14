@@ -1,0 +1,14 @@
+node {
+    stage('build') {
+        echo "buiding the project artifacts..."
+    }
+    stage('deploy') {
+        echo "deploy the project onto a specific environment(dev/stage/test/pre-prod/prod)..."
+    }
+    stage('test') {
+        echo "test  the application..."
+    }
+    stage('release') {
+        echo "release the application..."
+    }
+}
