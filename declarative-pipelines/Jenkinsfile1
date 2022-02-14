@@ -1,0 +1,27 @@
+pipeline {
+    agent {
+        label 'any'
+    }
+    stages {
+        stage('build') {
+            steps {
+                echo "build the project artifactory..."
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo "deploying the artifactory to specific environment(dev/stage/test/pre-prod/prod)..."
+            }
+        }
+        stage('test') {
+            steps {
+                echo "testing the project..."
+            }
+        }
+        stage('release') {
+            steps {
+                echo "release the project..."
+            }
+        }
+    }
+}
